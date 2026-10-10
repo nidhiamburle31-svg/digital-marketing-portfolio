@@ -7,3 +7,7 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.js-reveal .reveal{opacity:1;transform:none}}
 /* Keep decorative orbital rings within small-screen bounds. */
 @media(max-width:520px){.orbit{display:none}}
+
+/* Preserve the full frame of supplied concept ads, including portrait video. */
+.video-wrap video[src]{object-fit:contain}
+.video-body>p:not(.eyebrow):not(.media-status){font-size:12px;line-height:1.7;margin:12px 0}
