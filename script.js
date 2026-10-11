@@ -78,15 +78,6 @@ async function fileExists(path, type) {
     return response.ok && (response.headers.get('content-type') || '').toLowerCase().includes(type);
   } catch { return false; }
 }
-async function enableResume() {
-  const link = document.querySelector('#resume-link');
-  if (await fileExists(link.dataset.file, 'application/pdf')) {
-    link.href = link.dataset.file;
-    link.download = 'Resume.pdf';
-    link.removeAttribute('aria-disabled');
-    document.querySelector('#resume-status').textContent = 'Download my resume for my background and practical training.';
-  }
-}
 async function enableVideo(video) {
   if (await fileExists(video.dataset.video, 'video/')) {
     video.src = video.dataset.video;
@@ -107,4 +98,3 @@ if ('IntersectionObserver' in window) {
   }, {rootMargin: '150px'});
   document.querySelectorAll('video[data-video]').forEach(video => mediaObserver.observe(video));
 } else document.querySelectorAll('video[data-video]').forEach(enableVideo);
-enableResume();
