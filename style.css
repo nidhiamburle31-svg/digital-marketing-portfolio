@@ -11,3 +11,7 @@
 /* Preserve the full frame of supplied concept ads, including portrait video. */
 .video-wrap video[src]{object-fit:contain}
 .video-body>p:not(.eyebrow):not(.media-status){font-size:12px;line-height:1.7;margin:12px 0}
+
+/* Make each Contact card clickable while preserving its existing layout. */
+#contact .contact-card{position:relative}
+#contact .contact-card a::after{content:"";position:absolute;inset:0;border-radius:inherit}
