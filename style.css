@@ -15,3 +15,8 @@
 /* Make each Contact card clickable while preserving its existing layout. */
 #contact .contact-card{position:relative}
 #contact .contact-card a::after{content:"";position:absolute;inset:0;border-radius:inherit}
+
+/* Contact grid: four desktop cards, two on tablets, one on mobile. */
+#contact .contact-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media(max-width:1100px){#contact .contact-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){#contact .contact-grid{grid-template-columns:minmax(0,1fr)}}
