@@ -30,3 +30,8 @@
 @keyframes case-appear{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
 @media(max-width:600px){.case-study-page .nav{height:auto;min-height:84px;flex-wrap:wrap;padding-block:15px;gap:8px 20px}.case-study-page .case-hero{padding-top:50px}.case-study-page .case-lead{font-size:18px}.case-study-page .case-grid{grid-template-columns:minmax(0,1fr)}.case-study-page .case-panel{padding:24px}.case-study-page .case-section{padding-block:45px}.case-study-page .case-index{gap:12px 18px}}
 @media(prefers-reduced-motion:reduce){.case-study-page .case-hero{animation:none}}
+
+/* Tools-only responsive grid; other case-study grids retain their layouts. */
+.case-study-page #tools .case-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media(max-width:1100px){.case-study-page #tools .case-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.case-study-page #tools .case-grid{grid-template-columns:minmax(0,1fr)}}
