@@ -20,3 +20,11 @@
 #contact .contact-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
 @media(max-width:1100px){#contact .contact-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){#contact .contact-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* Keep rotated hero rings within the available space at intermediate widths. */
+@media(min-width:801px) and (max-width:1300px){
+ .hero{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr)}
+ .hero-art{min-width:0}
+ .orbit-one{width:90%;height:65%;left:5%;top:18%;transform:rotate(-25deg) scale(.85)}
+ .orbit-two{width:100%;height:50%;left:0;top:25%;transform:rotate(25deg) scale(.85)}
+}
