@@ -1,0 +1,29 @@
+/* Kerala case-study additions are scoped to this page. */
+.kerala-case-study .tools-grid,.kerala-case-study .skills-practiced{grid-template-columns:repeat(4,minmax(0,1fr))}
+.kerala-case-study .tools-grid .case-panel,.kerala-case-study .skills-practiced .case-panel{padding:25px}
+.kerala-case-study .tools-grid h3,.kerala-case-study .skills-practiced h3{font-size:19px}
+.kerala-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:34px}
+.kerala-gallery .screenshot-card{padding:0;overflow:hidden}
+.kerala-gallery .screenshot-card>a{display:block;position:relative;background:#0d0d16;border-bottom:1px solid var(--line)}
+.kerala-gallery .screenshot-card>a::after{content:"VIEW FULL SIZE ↗";position:absolute;right:14px;bottom:14px;padding:7px 10px;border:1px solid #d9b7ff55;border-radius:6px;background:#100d1dd9;color:#f0e7fa;font-size:9px;letter-spacing:.1em;opacity:0;transform:translateY(5px);transition:opacity .2s,transform .2s}
+.kerala-gallery .screenshot-card>a:hover::after,.kerala-gallery .screenshot-card>a:focus-visible::after{opacity:1;transform:none}
+.kerala-gallery img{aspect-ratio:16/8.5;object-fit:contain;background:#fff;transition:transform .35s ease}
+.kerala-gallery .screenshot-card:hover img{transform:scale(1.012)}
+.kerala-gallery .screenshot-card>div{padding:24px}
+.kerala-gallery .screenshot-card span{display:block;color:#c091ef;font-size:11px;letter-spacing:.14em;margin-bottom:10px}
+.kerala-gallery .screenshot-card h3{font-size:21px;margin-bottom:11px}
+.kerala-gallery .screenshot-card p{font-size:14px;line-height:1.7;margin:0}
+.keyword-table-wrap{margin-top:34px;overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:linear-gradient(130deg,#211b2d,#16141f);box-shadow:0 22px 60px #0002}
+.keyword-table-wrap:focus-visible{outline:3px solid #d8b4fe;outline-offset:4px}
+.keyword-table-wrap table{width:100%;min-width:720px;border-collapse:collapse;text-align:left}
+.keyword-table-wrap caption{padding:20px 22px;text-align:left;color:#cbb7df;font-size:13px;border-bottom:1px solid var(--line)}
+.keyword-table-wrap th{padding:15px 18px;background:#2a1c3c;color:#f5eaff;font-size:12px;letter-spacing:.04em}
+.keyword-table-wrap td{padding:14px 18px;border-top:1px solid var(--line);color:#c8c1d1;font-size:14px}
+.keyword-table-wrap tbody tr:hover{background:#7c3aed0d}
+.keyword-table-wrap td:first-child{width:55px;color:#b887e7}
+.keyword-table-wrap td:nth-child(3),.keyword-table-wrap td:nth-child(4){white-space:nowrap}
+.workbook-link{margin-top:24px}
+@media(max-width:1100px){.kerala-case-study .tools-grid,.kerala-case-study .skills-practiced{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:720px){.kerala-gallery{grid-template-columns:minmax(0,1fr)}.kerala-gallery .screenshot-card>a::after{opacity:1;transform:none}}
+@media(max-width:600px){.kerala-case-study .tools-grid,.kerala-case-study .skills-practiced{grid-template-columns:minmax(0,1fr)}.kerala-gallery .screenshot-card>div{padding:21px}.keyword-table-wrap{margin-inline:calc((100vw - 100%)/-2);border-radius:0}.keyword-table-wrap caption{padding-left:20px}}
+@media(prefers-reduced-motion:reduce){.kerala-gallery img,.kerala-gallery .screenshot-card>a::after{transition:none}}
