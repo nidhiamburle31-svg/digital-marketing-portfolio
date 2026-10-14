@@ -51,6 +51,30 @@
 @media(max-width:800px){#skills .skills-grid-four,#skills .skills-grid-two,#skills .skills-grid-three{grid-template-columns:repeat(2,minmax(0,1fr))}#skills .skills-tools-heading{align-items:flex-start;flex-direction:column;gap:8px}#skills .skills-tools-heading>p{text-align:left}}
 @media(max-width:520px){#skills .skills-categories{gap:28px}#skills .skills-grid-four,#skills .skills-grid-two,#skills .skills-grid-three{grid-template-columns:1fr}#skills .skills-tools{margin-top:34px;padding-top:26px}#skills .tool-badges{display:grid;grid-template-columns:1fr}#skills .tool-badge{justify-content:center}}
 
+/* Projects section: consistent recruiter-focused cards */
+#projects .section-heading-row>p{max-width:390px}
+#projects .projects-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:stretch}
+#projects .project-card{grid-column:auto;display:flex;min-width:0;flex-direction:column}
+#projects .project-card:nth-child(n),#projects .project-card:last-of-type{grid-column:auto}
+#projects .project-card:last-of-type{grid-column:1/-1;width:calc(50% - 12px);justify-self:center}
+#projects .project-image{display:block;position:relative;aspect-ratio:5/3;background:#12101b;border-bottom:1px solid var(--line)}
+#projects .project-image img{width:100%;height:100%;aspect-ratio:auto;object-fit:cover}
+#projects .project-card:nth-child(4) .project-image img{object-position:center 30%}
+#projects .project-type{position:absolute;left:16px;bottom:14px;padding:6px 9px;border:1px solid rgba(216,180,254,.22);border-radius:6px;background:rgba(15,15,26,.88);color:#e8d7f8;font-size:8px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;backdrop-filter:blur(10px)}
+#projects .project-body{display:flex;flex:1;flex-direction:column;padding:27px}
+#projects .project-body h3{font-size:clamp(20px,2vw,24px);margin-bottom:13px}
+#projects .project-body h3 a{transition:color .2s}
+#projects .project-body h3 a:hover{color:#d8b4fe}
+#projects .project-summary{min-height:68px;margin-bottom:18px;font-size:12px;line-height:1.75}
+#projects .project-facts{margin:0 0 20px;padding:0;border-top:1px solid var(--line)}
+#projects .project-facts div{display:grid;grid-template-columns:112px 1fr;align-items:start;gap:14px;padding:10px 0;border-bottom:1px solid var(--line);font-size:11px}
+#projects .project-facts dt{color:#9f93ad;font-weight:600}
+#projects .project-facts dd{color:#d8d0e1;line-height:1.55}
+#projects .tags{margin-bottom:22px}
+#projects .project-cta{align-self:flex-start;margin-top:auto}
+@media(max-width:800px){#projects .projects-grid{grid-template-columns:1fr}#projects .project-card:last-of-type{grid-column:auto;width:auto;justify-self:stretch}#projects .project-summary{min-height:0}}
+@media(max-width:520px){#projects .project-image{aspect-ratio:4/3}#projects .project-body{padding:23px}#projects .project-facts div{grid-template-columns:1fr;gap:3px}#projects .project-cta{width:100%}}
+
 /* Hero-only refinements for the expanded job-focused role and three CTAs. */
 .hero .hero-role{max-width:620px;line-height:1.55}
 .hero .button-row{flex-wrap:wrap}
