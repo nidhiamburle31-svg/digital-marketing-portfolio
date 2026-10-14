@@ -1,0 +1,29 @@
+/* Panditji audit additions, scoped to this case-study page. */
+.panditji-audit-case-study{overflow-x:clip}
+.panditji-audit-case-study main,.panditji-audit-case-study .case-section,.panditji-audit-case-study .case-panel{min-width:0}
+.panditji-audit-case-study .audit-summary{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:1px;margin:8px 0 10px;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--line)}
+.panditji-audit-case-study .audit-summary div{display:flex;min-height:118px;flex-direction:column;justify-content:center;padding:20px;background:linear-gradient(135deg,#211a2d,#15131e)}
+.panditji-audit-case-study .audit-summary strong{font-size:32px;line-height:1;background:var(--gradient);background-clip:text;-webkit-background-clip:text;color:transparent}
+.panditji-audit-case-study .audit-summary span{margin-top:11px;color:#bdb3c9;font-size:12px;line-height:1.45}
+.panditji-audit-case-study .audit-grid,.panditji-audit-case-study .status-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:28px}
+.panditji-audit-case-study .case-note-box{max-width:920px;margin-top:28px;padding:24px;border:1px solid #a46bd04a;border-left:3px solid #b078ea;border-radius:10px;background:linear-gradient(120deg,#251b35,#181520)}
+.panditji-audit-case-study .case-note-box strong{color:#eadcf8;font-size:16px}
+.panditji-audit-case-study .case-note-box p{margin:8px 0 0;font-size:14px}
+.panditji-audit-case-study .status-chip{display:inline-flex;margin-bottom:20px;padding:5px 9px;border:1px solid;border-radius:999px;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.panditji-audit-case-study .status-chip.issue{color:#ffb4c9;border-color:#ec489966;background:#ec489912}
+.panditji-audit-case-study .status-chip.verify{color:#d8b4fe;border-color:#a855f766;background:#a855f712}
+.panditji-audit-case-study .status-chip.opportunity{color:#93c5fd;border-color:#60a5fa66;background:#60a5fa12}
+.panditji-audit-case-study .status-chip.partial{color:#a7f3d0;border-color:#34d39966;background:#34d39912}
+.panditji-audit-case-study .audit-evidence-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:35px}
+.panditji-audit-case-study .evidence-card{display:flex;flex-direction:column}
+.panditji-audit-case-study .evidence-image{display:flex;align-items:center;justify-content:center;height:280px;margin:-8px -8px 24px;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff}
+.panditji-audit-case-study .evidence-image img{width:100%;height:100%;object-fit:contain;transition:transform .35s ease}
+.panditji-audit-case-study .evidence-image:hover img{transform:scale(1.015)}
+.panditji-audit-case-study .evidence-card h3{margin-bottom:12px}
+.panditji-audit-case-study .evidence-link{align-self:flex-start;margin-top:auto;padding-top:20px;color:#d8b4fe;font-size:14px;text-decoration:underline;text-underline-offset:4px}
+.panditji-audit-case-study .skills-tools-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.panditji-audit-case-study p,.panditji-audit-case-study li,.panditji-audit-case-study a{overflow-wrap:anywhere}
+@media(max-width:1000px){.panditji-audit-case-study .audit-summary{grid-template-columns:repeat(3,minmax(0,1fr))}.panditji-audit-case-study .skills-tools-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.panditji-audit-case-study .audit-summary{grid-template-columns:repeat(2,minmax(0,1fr))}.panditji-audit-case-study .audit-evidence-grid,.panditji-audit-case-study .status-grid,.panditji-audit-case-study .audit-grid,.panditji-audit-case-study .skills-tools-grid{grid-template-columns:minmax(0,1fr)}.panditji-audit-case-study .evidence-image{height:auto;min-height:210px}.panditji-audit-case-study .evidence-image img{height:auto;max-height:420px}}
+@media(max-width:430px){.panditji-audit-case-study .audit-summary{grid-template-columns:minmax(0,1fr)}.panditji-audit-case-study .audit-summary div{min-height:92px}.panditji-audit-case-study .evidence-image{min-height:160px}}
+@media(prefers-reduced-motion:reduce){.panditji-audit-case-study .evidence-image img{transition:none}}
