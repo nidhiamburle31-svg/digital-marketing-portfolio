@@ -28,3 +28,12 @@
  .orbit-one{width:90%;height:65%;left:5%;top:18%;transform:rotate(-25deg) scale(.85)}
  .orbit-two{width:100%;height:50%;left:0;top:25%;transform:rotate(25deg) scale(.85)}
 }
+
+/* Hero-only refinements for the expanded job-focused role and three CTAs. */
+.hero .hero-role{max-width:620px;line-height:1.55}
+.hero .button-row{flex-wrap:wrap}
+@media(max-width:520px){
+ .hero .button-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%}
+ .hero .button-row .button{width:100%;gap:10px;padding-inline:12px}
+ .hero .button-row .resume-button{grid-column:1/-1}
+}
