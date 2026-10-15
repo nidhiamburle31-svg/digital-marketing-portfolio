@@ -100,6 +100,17 @@
 @media(max-width:800px){#gallery .gallery-grid{grid-template-columns:1fr}#gallery .video-card:last-child{grid-column:auto;width:auto;justify-self:stretch}#gallery .creative-description{min-height:0}}
 @media(max-width:520px){#gallery .video-body{padding:22px}#gallery .creative-meta{grid-template-columns:1fr}#gallery .creative-meta span{padding:10px 0}#gallery .creative-meta span+span{padding-left:0;border-top:1px solid var(--line);border-left:0}#gallery .gallery-disclaimer{text-align:left}}
 
+/* Contact section: recruiter-focused invitation and accessible actions */
+#contact .contact-intro{max-width:760px;margin:26px auto 24px}
+#contact .contact-intro p{margin:0;color:#bcb3c7;font-size:14px;line-height:1.8}
+#contact .contact-intro p+p{margin-top:9px}
+#contact .contact-action{display:flex;justify-content:center;margin-bottom:38px}
+#contact .contact-action .button{min-width:154px}
+#contact .contact-card{transition:transform .22s ease,border-color .22s ease,background-color .22s ease,box-shadow .22s ease}
+#contact .contact-card:hover{transform:translateY(-3px);border-color:rgba(192,132,252,.46);background:#211a2baa;box-shadow:0 14px 32px rgba(0,0,0,.16)}
+#contact .contact-card:focus-within{border-color:#b58de5;box-shadow:0 0 0 2px rgba(181,141,229,.15)}
+@media(max-width:600px){#contact .contact-intro{margin-top:22px}#contact .contact-intro p{font-size:13px}#contact .contact-action{margin-bottom:30px}#contact .contact-action .button{width:100%}}
+
 /* Hero-only refinements for the expanded job-focused role and three CTAs. */
 .hero .hero-role{max-width:620px;line-height:1.55}
 .hero .button-row{flex-wrap:wrap}
