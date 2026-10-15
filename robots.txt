@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nidhiamburle31-svg.github.io/digital-marketing-portfolio/sitemap.xml
